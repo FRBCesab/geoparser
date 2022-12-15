@@ -1,3 +1,4 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # geoparser <img src="man/figures/package-sticker.png" align="right" style="float:right; height:120px;"/>
@@ -12,7 +13,7 @@ coverage](https://github.com/frbcesab/geoparser/actions/workflows/test-coverage.
 [![codecov](https://codecov.io/gh/frbcesab/geoparser/branch/main/graph/badge.svg)](https://codecov.io/gh/frbcesab/geoparser)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/geoparser)](https://CRAN.R-project.org/package=geoparser)
-[![License: GPL (&gt;=
+[![License: GPL (>=
 2)](https://img.shields.io/badge/License-GPL%20%28%3E%3D%202%29-blue.svg)](https://choosealicense.com/licenses/gpl-2.0/)
 [![LifeCycle](https://img.shields.io/badge/lifecycle-experimental-orange)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Project Status:
@@ -28,12 +29,16 @@ The goal of the R package `geoparser` is to **{{ PLEASE ADD A FEW LINES
 You can install the development version from
 [GitHub](https://github.com/) with:
 
-    # install.packages("remotes")
-    remotes::install_github("frbcesab/geoparser")
+``` r
+# install.packages("remotes")
+remotes::install_github("frbcesab/geoparser")
+```
 
 Then you can attach the package `geoparser`:
 
-    library("geoparser")
+``` r
+library("geoparser")
+```
 
 ## Overview
 
