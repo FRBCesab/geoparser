@@ -13,16 +13,13 @@ coverage](https://github.com/frbcesab/geoparser/actions/workflows/test-coverage.
 [![codecov](https://codecov.io/gh/frbcesab/geoparser/branch/main/graph/badge.svg)](https://codecov.io/gh/frbcesab/geoparser)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/geoparser)](https://CRAN.R-project.org/package=geoparser)
-[![License: GPL (>=
+[![License: GPL (\>=
 2)](https://img.shields.io/badge/License-GPL%20%28%3E%3D%202%29-blue.svg)](https://choosealicense.com/licenses/gpl-2.0/)
-[![LifeCycle](https://img.shields.io/badge/lifecycle-experimental-orange)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Project Status:
-Concept](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
-[![Dependencies](https://img.shields.io/badge/dependencies-0/0-brightgreen?style=flat)](#)
 <!-- badges: end -->
 
-The goal of the R package `geoparser` is to **{{ PLEASE ADD A FEW LINES
-}}**
+The goal of the R package `geoparser` is to detect country names in a
+text document (e.g. a PDF file imported with the R package
+[`pdftools`](https://cran.r-project.org/package=pdftools)).
 
 ## Installation
 
@@ -42,15 +39,45 @@ library("geoparser")
 
 ## Overview
 
-Here is an overview of `geoparser` content: **{{ PLEASE ADD A FEW LINES
-}}**
+The package `geoparser` contains the function
+[`geoparser()`](https://frbcesab.github.io/geoparser/reference/geoparser.html)
+used to detect countries listed in the internal dataset
+[`world_countries`](https://frbcesab.github.io/geoparser/reference/world_countries.html).
+
+The function `geoparser()` returns a `data.frame` with the following
+columns:
+
+- `geographic_entity`: the name of the country
+- `n_pages`: the total number of pages in the document
+- `page`: the page number
+- `count`: the occurrence of the country for a given page
+
+| geographic_entity | n_pages | page | count |
+|:------------------|:-------:|-----:|------:|
+| Canada            |   11    |    1 |     2 |
+| Canada            |   11    |    2 |     5 |
+| United States     |   11    |    3 |     1 |
+| Canada            |   11    |    3 |     5 |
+| United States     |   11    |    4 |     1 |
+| United States     |   11    |    5 |     1 |
+| Canada            |   11    |    9 |     1 |
+| Denmark           |   11    |   10 |     1 |
+| United Kingdom    |   11    |   10 |     2 |
+| United States     |   11    |   10 |     2 |
+| Canada            |   11    |   10 |     5 |
+| Australia         |   11    |   11 |     1 |
+| Bangladesh        |   11    |   11 |     1 |
+| Estonia           |   11    |   11 |     1 |
+| Canada            |   11    |   11 |     2 |
+| United Kingdom    |   11    |   11 |     2 |
+| United States     |   11    |   11 |     5 |
 
 ## Citation
 
 Please cite this package as:
 
-> Casajus Nicolas (2022) geoparser: An R package to **{{ TITLE }}**. R
-> package version 0.0.0.9000.
+> Casajus Nicolas (2023) geoparser: An R package to detect country names
+> in documents. R package version 0.1.
 
 ## Code of Conduct
 
