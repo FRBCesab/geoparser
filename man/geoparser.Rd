@@ -22,5 +22,20 @@ a \code{data.frame} with the following four columns:
 Detect countries names
 }
 \examples{
-## ----
+## Example document ----
+texte <- c(
+  "
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  tempor incididunt US labore et dolore magna aliqua. USA enim ad minim 
+  veniam, quis nostrud exercitation ullamco laboris United States
+  ",
+  "
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+  tempor incididunt US labore et dolore magna aliqua. USA enim ad minim 
+  veniam, quis nostrud exercitation ullamco laboris Canada.
+  "
+)
+
+## Detect countries ----
+geoparser(texte)
 }
