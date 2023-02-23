@@ -10,12 +10,12 @@ geoparser(x)
 \item{x}{a \code{character} in which countries will be detected.}
 }
 \value{
-a \code{data.frame} with the following four columns:
+A \code{data.frame} with the following four columns:
 \itemize{
 \item \code{geographic_entity}: the name of the country
 \item \code{n_pages}: the total number of pages in the document
 \item \code{page}: the page number
-\item \code{count}: the occurrence of the country for a given page
+\item \code{count}: the occurrence of the country name for a given page
 }
 }
 \description{

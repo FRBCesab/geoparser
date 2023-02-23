@@ -2,11 +2,11 @@
 #'
 #' @param x a `character` in which countries will be detected. 
 #'
-#' @return a `data.frame` with the following four columns:
+#' @return A `data.frame` with the following four columns:
 #'   - `geographic_entity`: the name of the country
 #'   - `n_pages`: the total number of pages in the document
 #'   - `page`: the page number
-#'   - `count`: the occurrence of the country for a given page
+#'   - `count`: the occurrence of the country name for a given page
 #' 
 #' @export
 #'
