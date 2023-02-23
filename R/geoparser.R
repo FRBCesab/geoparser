@@ -2,7 +2,11 @@
 #'
 #' @param x a `character` in which countries will be detected. 
 #'
-#' @return a `data.frame` with: ...
+#' @return a `data.frame` with the following four columns:
+#'   - `geographic_entity`: the name of the country
+#'   - `n_pages`: the total number of pages in the document
+#'   - `page`: the page number
+#'   - `count`: the occurrence of the country for a given page
 #' 
 #' @export
 #'
@@ -10,6 +14,9 @@
 #' ## ----
 
 geoparser <- function(x) {
+  
+  
+  ## Check args ----
   
   if (missing(x)) {
     stop("Argument 'x' is required", call. = FALSE)
