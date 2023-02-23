@@ -26,6 +26,10 @@ geoparser <- function(x) {
     stop("Argument 'x' must be a character", call. = FALSE)
   }
   
+  if (any(is.na(x))) {
+    stop("Argument 'x' cannot contain NA", call. = FALSE)
+  }
+  
   
   ## Import patterns ----
   
