@@ -1,15 +1,15 @@
 Package: geoparser
 Type: Package
-Title: The Title of the Project
-Version: 0.0.0.9000
+Title: Detect Country Names in Documents
+Version: 0.1
 Authors@R: c(
     person(given   = "Nicolas",
            family  = "Casajus",
            role    = c("aut", "cre", "cph"),
            email   = "nicolas.casajus@fondationbiodiversite.fr",
            comment = c(ORCID = "0000-0002-5537-5294")))
-Description: A paragraph providing a full description of the project (on 
-    several lines...)
+Description: Detects country names in PDF documents imported with the package
+    'pdftools'.
 URL: https://github.com/frbcesab/geoparser
 BugReports: https://github.com/frbcesab/geoparser/issues
 License: GPL (>= 2)
