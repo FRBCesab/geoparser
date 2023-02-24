@@ -46,14 +46,11 @@ geoparser <- function(x) {
   }
   
   
-  ## Import patterns ----
-  
-  world_countries <- world_countries[!is.na(world_countries$"parser"), ]
-  countries <- world_countries$"parser"
-
-  
   ## Clean patterns ----
   
+  world_countries <- world_countries[!is.na(world_countries$"parser"), ]
+  
+  countries <- world_countries$"parser"
   countries <- gsub("-", " ", countries)
   
   
