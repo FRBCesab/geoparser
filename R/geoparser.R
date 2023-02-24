@@ -101,8 +101,8 @@ geoparser <- function(x) {
   
   detections <- as.data.frame(detections)
   
-  detections$"page"   <- as.numeric(gsub("page", "", detections$"page"))
-  detections$"n_page" <- length(x)
+  detections$"page"    <- as.numeric(gsub("page", "", detections$"page"))
+  detections$"n_pages" <- length(x)
   
 
   ## Keep only matches ----
