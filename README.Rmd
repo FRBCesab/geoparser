@@ -59,11 +59,12 @@ used to detect countries listed in the internal dataset
 
 The function `geoparser()` returns a `data.frame` with the following columns:
 
-- `geographic_entity`: the name of the country
-- `n_pages`: the total number of pages in the document
-- `page`: the page number
-- `count`: the occurrence of the country for a given page
+- `geographic_entity`: the name of the country according to [GADM](https://gadm.org/);
+- `n_pages`: the total number of pages in the document;
+- `page`: the page number;
+- `count`: the occurrence of the country for a given page.
 
+Example:
 
 |   geographic_entity | n_pages | page | count |
 | :------------------ | :-----: | ---: | ----: |
@@ -92,7 +93,7 @@ The function `geoparser()` returns a `data.frame` with the following columns:
 Please cite this package as: 
 
 > Casajus Nicolas (`r format(Sys.Date(), "%Y")`) geoparser: An R 
-package to detect country names in documents. R package version 0.1.
+package to detect country names in documents. R package version 0.1. <https://frbcesab.github.io/geoparser>.
 
 
 
